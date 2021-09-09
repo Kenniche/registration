@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form class="info"></form>
+    <!--<form action="/process" method="post">-->
+        <div>
+            <label for="firstName">First Name:*  </label>
+            <input type="text" id="firstName" name="firstName"
+            placeholder="Your First Name..." >
+        </div>
+        <div>
+            <label for="lastName">Last Name:*  </label>
+            <input type="text" id="lastName" name="lastName"
+            placeholder="Your Last Name..." >
+        </div>
+        <div>
+            <label for="userEmail">Email Address:*  </label>
+            <input type="text" id="userEmail" name="userEmail"
+            placeholder="Your email..." >
+        </div>
+        <div>
+            <label for="userPassword">Password:*  </label>
+            <input type="password" id="userPassword" name="userPassword"
+            placeholder="Your password here..." >
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:*  </label>
+            <input type="password" id="confirmPassword" name="confirmPassword"
+            placeholder="Confirm your password..." >
+        </div>
+        <div>
+            <label for="birthday">Birthday:  </label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <label>Gender Identity:* </label><br>
+            <input type="radio" id="male" name="gender" value="Male" >
+            <label for="male">Male<label>
+            <input type="radio" id="female"name="gender" value="Female" >
+            <label for="female">Female<label>
+            <input type="radio" id="nb"name="gender" value="Non-binary" >
+            <label for="nb">Non-binary<label>
+            <input type="radio" id="ipna"name="gender" value="ipna" >
+            <label for="ipna">I prefer not to answer<label>
+        </div>
+        <div>
+            <label for="comment">A short description about myself: </label><br>
+            <textarea id="comment" name="comment" cols="40" rows="5"></textarea>
+        </div>
+        <div>
+            <label>Favorite Language:  </label>
+            <select name="Language">
+                <option>JavaScript</option>
+                <option>CSS</option>
+                <option>HTML</option>
+                <option>Python</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="Subscription"
+            id="Subscription" checked >
+            <label for="Subscription"> Yes, I would like
+            to receive periodic email updates</label>
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="Create Account" />
+        </div>
+    </form>
+    <p>* Indicates a required field</p>
+</body>
+<!--Code by @Kenniche-->
+</html>
